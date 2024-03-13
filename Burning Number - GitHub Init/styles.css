@@ -1,0 +1,107 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(15, 1, 15);
+    padding: 5px;
+}
+
+.bold {
+    font-weight: bold;
+}
+.round-info {
+    color: white;
+    text-align: left;
+    width: 750px;
+    font-size: 36px;
+    
+}
+#lesson-title {
+    text-align: center;
+    font-size: 100px;
+    color:rgb(127, 232, 255);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 86px;
+    border: 5px solid rgb(140, 140, 140);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(218, 218, 218);
+    margin-top: 20px;
+    width: 250px;
+}
+
+#rules-btn {
+    top: 0;
+}
+
+button:hover {
+    background-color: silver;
+}
+
+button:active {
+    background-color: grey;
+}
+
+#button-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 1000px;
+    border-top: 10px solid silver;
+    border-bottom: 10px solid silver;
+    border-left: 10px solid silver;
+    background-color: rgb(234, 234, 234);
+
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#game-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    width: 2000px;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    background: linear-gradient(rgb(53, 87, 109), rgb(28, 33, 46));
+
+
+    border: 10px solid silver;
+    border-radius: 10px;
+}
+
+#parameter-container {
+    display: flex;
+    flex-direction: column;
+}
+
+select, label, input {
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css"/>
+        <title>The Burning Number of a Graph</title>
+    </head>
+    <body>
+        <h1 id="lesson-title">The Burning Number of a Graph</h1>
+        <div id="round-info-div">
+            <p class="round-info"><span class="bold">Each Round:</span> Select a vertex to burn, then click burn to spread the fire.</p>
+            <p class="round-info"><span class="bold">Game Ends:</span> When every vertex is burned.</p>
+            <p class="round-info"><span class="bold">Burning Number:</span> The fewest number of rounds required to burn the graph.</p>
+        </div>
+        <div id="game-container">
+            <div id="button-div">
+                <label for="graph-select">Select a graph or a graph family along with parameters</label>
+                <select id="graph-select" name="graph-select">
+                    <option value="petersen_graph" name="graph-select" selected>Petersen Graph</option>
+                    <option value="tutte_graph" name="graph-select">Tutte Graph</option>
+                    <option value="heawood_graph" name="graph-select">Heawood Graph</option>
+                    <option value="bull_graph" name="graph-select">Bull Graph</option>
+                    <option value="chvatal_graph" name="graph-select">Chvatal Graph</option>
+                    <option value="cubical_graph" name="graph-select">Cube</option>
+                    <option value="desargues_graph" name="graph-select">Desargues Graph</option>
+                    <option value="diamond_graph" name="graph-select">Diamond Graph</option>
+                    <option value="dodecahedral_graph" name="graph-select">Dodecahedron</option>
+                    <option value="frucht_graph" name="graph-select">Frucht Graph</option>
+                    <option value="hoffman_singleton_graph" name="graph-select">Hoffman-Singleton Graph</option>
+                    <option value="house_graph" name="graph-select">House Graph</option>
+                    <option value="icosahedral_graph" name="graph-select">Icosahedron</option>
+                    <option value="krackhardt_kite_graph" name="graph-select">Krackhardt Kite</option>
+                    <option value="moebius_kantor_graph" name="graph-select">Moebius-Kantor Graph</option>
+                    <option value="octahedral_graph" name="graph-select">Octahedron</option>
+                    <option value="pappus_graph" name="graph-select">Pappus Graph</option>
+                    <option value="sedgewick_maze_graph" name="graph-select">Sedgewick Maze</option>
+                    <option value="tetrahedral_graph" name="graph-select">Tetrahedron</option>
+                    <option value="truncated_cube_graph" name="graph-select">Truncated Cube</option>
+                    <option value="truncated_tetrahedron_graph" name="graph-select">Truncated Tetrahedron</option>
+                    <option value="complete_graph" name="graph-family-select">Complete Graph K(n)</option>
+                    <option value="complete_bipartite_graph" name="graph-family-select">Complete Bipartite Graph K(n,m)</option>
+                </select>
+                <div id="parameter-container"></div>
+                <button id="show-btn">Show</button>
+                <button id="rules-btn">Rules</button>
+                <button id="burn-btn">Burn</button>
+                <button id="reset-btn">Reset</button>
+            </div>
+            <canvas width="2000" height="1000"></canvas>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
